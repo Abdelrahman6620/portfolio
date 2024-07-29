@@ -1,0 +1,188 @@
+
+.nImg{
+width:100% ;
+height: 400px;
+}
+#photo {
+    height: 400px;
+    background-image: url('background.jpg');
+    background-size: cover; 
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+
+    background-color: #f0f0f0; /* Background color for the entire width */
+    padding-top: 120px;
+    padding-left: 90px;
+    
+    text-align: start; /* Center text horizontally */
+}
+
+
+#photo .container {
+  max-width: 800px; /* Set a maximum width for content */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 15px; /* Add padding inside the container */
+  box-sizing: border-box; /* Include padding in total width */
+}
+.photo2
+{
+    color: antiquewhite;
+    text-align: center;
+    align-items: center;
+    height: 400px;
+    background-image: url('background2.jpg');
+    background-size: cover; 
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+
+}
+#carouselExample .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 190;
+}
+.textCentered
+{
+text-align: center;
+
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers navbar items horizontally */
+}
+.navbar .navbar-nav {
+    justify-content: center; /* Centers nav items within navbar */
+}
+.navbar .navbar-collapse {
+    flex-grow: 0; /* Prevents collapsing the navbar on smaller screens */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust gap between images */
+    flex-wrap: wrap;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.btn-light {
+    text-align: center;
+    width: 300px; 
+    
+    padding: 10px 20px;}
+    .text-small {
+        font-size: 0.9rem;
+      }
+      
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+      
+      a:hover, a:focus {
+        text-decoration: none;
+      }
+      
+      .form-control {
+        background: #212529;
+        border-color: #545454;
+      }
+      
+      .form-control:focus {
+        background: #212529;
+      }
+      
+      footer {
+        background: rgb(41, 40, 40);
+      }
+      .D{
+        background-color: #050505;
+        width: 123px;
+      }
+
+
+      /***********************************/
+      *{
+        margin:0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        }
+        .container{
+        max-width: 1170px;
+        margin:auto;
+        }
+        .row{
+        display: flex;
+        flex-wrap: wrap;
+        }
+        img{
+        max-width: 100%;
+        vertical-align: middle;
+        }
+        /*.gallery*/
+        .gallery{
+        width: 100%;
+        display: block;
+        min-height: 100vh;
+        /* background-color: #3f3e45; */
+        padding: 100px 0;
+        }
+        .gallery .gallery-filter{
+        padding: 0 15px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        }
+        .gallery .gallery-filter .filter-item{
+        color: #721f1f;
+        font-size: 18px;
+        text-transform: uppercase;
+        display: inline-block;
+        margin:0 10px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        line-height: 1.2;
+        transition: all 0.3s ease;
+        }
+        .gallery .gallery-filter .filter-item.active{
+        color: #ff9800;
+        border-color : #ff9800;
+        }
+        .gallery .gallery-item{
+        width: calc(100% / 4);
+        padding: 15px;
+        }
+        .gallery .gallery-item-inner img{
+        width: 100%;
+        }
+        .gallery .gallery-item.show{
+        animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn{
+        0%{
+        opacity: 0;
+        }
+        100%{
+        opacity: 1;
+        }
+        }
+        .gallery .gallery-item.hide{
+        display: none;
+        }
+        
+        /*responsive*/
+        @media(max-width: 991px){
+        .gallery .gallery-item{
+        width: 50%;
+        }
+        }
+        @media(max-width: 767px){
+            .gallery .gallery-item{
+        width: 100%;
+        }
+        .gallery .gallery-filter .filter-item{
+        margin-bottom: 10px;
+        }
+        }
